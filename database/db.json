@@ -1,28 +1,14 @@
 {
   "posts": [
     {
-      "id": "1",
-      "title": "json-server",
-      "body": "json-server"
-    },
-    {
-      "id": "2",
-      "title": "Real-Server",
-      "body": "Open-server"
-    },
-    {
-      "id": "3",
-      "title": "Created-server",
-      "body": "Others-server"
-    },
-    {
       "id": "3cd0",
       "title": "LP-server",
       "body": "Lwin Phyo - server",
       "tags": [
         "vue",
         "js",
-        "front_end"
+        "front_end",
+        "react"
       ]
     },
     {
@@ -33,7 +19,19 @@
         "java",
         "back_end",
         "spring",
-        "database"
+        "database",
+        "react"
+      ]
+    },
+    {
+      "id": "6ebc",
+      "title": "redirect home",
+      "body": "now it go to home?",
+      "tags": [
+        "mysql",
+        "back_end",
+        "database",
+        "front_end"
       ]
     }
   ]

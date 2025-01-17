@@ -1,9 +1,5 @@
 <template>
 
-    <nav-bar>
-      <router-link to="/" class="NavBar">Home</router-link>
-      <router-link to="/create" class="NavBar">Create</router-link>
-    </nav-bar>
 
   <h1>Create</h1>
 
@@ -26,10 +22,13 @@
 </template>
 
 <script>
+import { useRouter } from 'vue-router';
 import { ref } from 'vue';
 
 export default {
     setup() {
+        let router = useRouter(); //this.$router
+
         let title = ref('')
         let body = ref('')
         let tag = ref('')
@@ -54,7 +53,8 @@ export default {
                     tags: tags.value
                 })
             })
-    
+          //redirect to HomePage
+          router.push('/')
         }
 
         return {title,body,tag, handlekeydown, tags, addPost}

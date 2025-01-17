@@ -7,7 +7,7 @@ let getPost = (id)=>{
     let load = async ()=>{
 
         await new Promise((resolve,reject)=>{
-            setTimeout(()=>{ resolve() },3000)
+            setTimeout(()=>{ resolve() },1000)
         })
 
         try {

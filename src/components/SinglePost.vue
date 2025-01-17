@@ -9,7 +9,9 @@
 
         <p>{{ cutPostBody }}</p>
 
-        <div class="tagCard" v-for="tag in post.tags" :key="tag">{{ tag }}</div>
+        <div class="tagCard" v-for="tag in post.tags" :key="tag">
+          <router-link :to="{name:'Tag',params:{tag}}">{{ tag }}</router-link>
+        </div>
     </div>
 
    
@@ -71,5 +73,28 @@ export default {
 .post a {
   text-decoration: none; /* Remove underline for links */
 }
+
+.tagCard {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: default;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.tagCard:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: wheat;
+}
+
+
 
 </style>
